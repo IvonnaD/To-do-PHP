@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head> 
+<body>
+
+<h1>My to-do list</h1>
+
+<!--form to add tasks-->
+    <form action="todo.php" method="post">
+
+        <input type="text" name="task" placeholder="Enter your task" required> 
+        <button type="submit">Add task</button><br>
+     
+    </form>
+
+<?php 
+include('todo.php');
+?>
+</body>
+</html>
+
